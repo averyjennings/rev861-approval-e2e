@@ -6,6 +6,7 @@ def line_total(unit_price_cents: int, quantity: int) -> int:
 
     Each purchased item is charged the full unit price.
     An empty line has a total of zero cents.
+    For example, three items priced at 250 cents total 750 cents.
     """
     if unit_price_cents < 0 or quantity < 0:
         raise ValueError("Price and quantity must be nonnegative")
